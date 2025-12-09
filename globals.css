@@ -137,6 +137,14 @@
   --radius: var(--radius-m); /* default radius */
 
   /* ========================================
+     COMPONENT SIZES
+     ======================================== */
+  
+  --input-width: 400px;
+  --input-min-width: 300px;
+  --input-max-width: 600px;
+
+  /* ========================================
      TYPOGRAPHY - FONT FAMILIES
      ======================================== */
   
@@ -264,83 +272,81 @@
    ======================================== */
 
 @layer base {
-  :where(:not(:has([class*=' text-']), :not(:has([class^='text-'])))) {
-    /* Display (H1) - Baikal Ultra Condensed Medium, 80px/120px */
-    h1 {
-      font-family: var(--font-baikal-ultra-condensed);
-      font-size: var(--font-size-80);
-      font-weight: var(--font-weight-medium);
-      line-height: var(--line-height-120);
-      text-transform: uppercase;
-    }
+  /* Display (H1) - Baikal Ultra Condensed Medium, 80px/120px */
+  h1 {
+    font-family: var(--font-baikal-ultra-condensed);
+    font-size: var(--font-size-80);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-120);
+    text-transform: uppercase;
+  }
 
-    /* Title (H2) - Baikal Ultra Condensed Regular, 47px/71px */
-    h2 {
-      font-family: var(--font-baikal-ultra-condensed);
-      font-size: var(--font-size-47);
-      font-weight: var(--font-weight-regular);
-      line-height: var(--line-height-71);
-      text-transform: uppercase;
-    }
+  /* Title (H2) - Baikal Ultra Condensed Regular, 47px/71px */
+  h2 {
+    font-family: var(--font-baikal-ultra-condensed);
+    font-size: var(--font-size-47);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-71);
+    text-transform: uppercase;
+  }
 
-    /* Subtitle (H3) - Baikal Expanded Regular, 36px/54px */
-    h3 {
-      font-family: var(--font-baikal-expanded);
-      font-size: var(--font-size-36);
-      font-weight: var(--font-weight-regular);
-      line-height: var(--line-height-54);
-      text-transform: uppercase;
-    }
+  /* Subtitle (H3) - Baikal Expanded Regular, 36px/54px */
+  h3 {
+    font-family: var(--font-baikal-expanded);
+    font-size: var(--font-size-36);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-54);
+    text-transform: uppercase;
+  }
 
-    /* Heading (H4) - Baikal Regular, 27px/41px */
-    h4 {
-      font-family: var(--font-baikal);
-      font-size: var(--font-size-27);
-      font-weight: var(--font-weight-regular);
-      line-height: var(--line-height-41);
-      text-transform: uppercase;
-    }
+  /* Heading (H4) - Baikal Regular, 27px/41px */
+  h4 {
+    font-family: var(--font-baikal);
+    font-size: var(--font-size-27);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-41);
+    text-transform: uppercase;
+  }
 
-    /* Subheading (H5) - Baikal Regular, 21px/32px */
-    h5 {
-      font-family: var(--font-baikal);
-      font-size: var(--font-size-21);
-      font-weight: var(--font-weight-regular);
-      line-height: var(--line-height-32);
-      text-transform: uppercase;
-    }
+  /* Subheading (H5) - Baikal Regular, 21px/32px */
+  h5 {
+    font-family: var(--font-baikal);
+    font-size: var(--font-size-21);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-32);
+    text-transform: uppercase;
+  }
 
-    /* Body Base - Baikal Regular, 16px/24px */
-    p {
-      font-family: var(--font-baikal);
-      font-size: var(--font-size-16);
-      font-weight: var(--font-weight-regular);
-      line-height: var(--line-height-24);
-    }
+  /* Body Base - Baikal Regular, 16px/24px */
+  p {
+    font-family: var(--font-baikal);
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-24);
+  }
 
-    /* Labels - Baikal Regular, 16px/24px */
-    label {
-      font-family: var(--font-baikal);
-      font-size: var(--font-size-16);
-      font-weight: var(--font-weight-regular);
-      line-height: var(--line-height-24);
-    }
+  /* Labels - Baikal Regular, 16px/24px */
+  label {
+    font-family: var(--font-baikal);
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-24);
+  }
 
-    /* Buttons - Baikal Regular, 16px/24px */
-    button {
-      font-family: var(--font-baikal);
-      font-size: var(--font-size-16);
-      font-weight: var(--font-weight-regular);
-      line-height: var(--line-height-24);
-    }
+  /* Buttons - Baikal Regular, 16px/24px */
+  button {
+    font-family: var(--font-baikal);
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-24);
+  }
 
-    /* Inputs - Baikal Regular, 16px/24px */
-    input {
-      font-family: var(--font-baikal);
-      font-size: var(--font-size-16);
-      font-weight: var(--font-weight-regular);
-      line-height: var(--line-height-24);
-    }
+  /* Inputs - Baikal Regular, 16px/24px */
+  input {
+    font-family: var(--font-baikal);
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-24);
   }
 }
 
