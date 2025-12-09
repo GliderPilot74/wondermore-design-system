@@ -1,0 +1,433 @@
+/* Wondermore Design System - CSS Variables & Tokens */
+
+/* Import Baikal Font Families */
+@import url('https://fonts.cdnfonts.com/css/baikal');
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* ========================================
+     WONDERMORE COLOR PALETTE
+     ======================================== */
+  
+  /* Wonder Yellow */
+  --wonder-yellow-50: #fef9ec;
+  --wonder-yellow-100: #fdf2d3;
+  --wonder-yellow-200: #fbe3a6;
+  --wonder-yellow-300: #f8ce6e;
+  --wonder-yellow-400: #f5b034;
+  --wonder-yellow-500: #F99D22;
+  --wonder-yellow-600: #dd7d0b;
+  --wonder-yellow-700: #b8590c;
+  --wonder-yellow-800: #954511;
+  --wonder-yellow-900: #7a3912;
+  --wonder-yellow-950: #461c06;
+
+  /* Wonder Orange */
+  --wonder-orange-50: #fef4ee;
+  --wonder-orange-100: #fde6d7;
+  --wonder-orange-200: #fac9ae;
+  --wonder-orange-300: #f7a57a;
+  --wonder-orange-400: #f37544;
+  --wonder-orange-500: #F26727;
+  --wonder-orange-600: #dc3e0f;
+  --wonder-orange-700: #b72d0f;
+  --wonder-orange-800: #922614;
+  --wonder-orange-900: #762213;
+  --wonder-orange-950: #400e08;
+
+  /* Wonder Orange-Red */
+  --wonder-orange-red-50: #fef2f2;
+  --wonder-orange-red-100: #fee2e2;
+  --wonder-orange-red-200: #fecaca;
+  --wonder-orange-red-300: #fca5a5;
+  --wonder-orange-red-400: #f87171;
+  --wonder-orange-red-500: #E42025;
+  --wonder-orange-red-600: #c41822;
+  --wonder-orange-red-700: #a3131c;
+  --wonder-orange-red-800: #86131a;
+  --wonder-orange-red-900: #70161c;
+  --wonder-orange-red-950: #3d0609;
+
+  /* Wonder Deep Red */
+  --wonder-deep-red-50: #fef2f2;
+  --wonder-deep-red-100: #fee2e3;
+  --wonder-deep-red-200: #fecacc;
+  --wonder-deep-red-300: #fca5a8;
+  --wonder-deep-red-400: #f87176;
+  --wonder-deep-red-500: #AA1E23;
+  --wonder-deep-red-600: #991b1f;
+  --wonder-deep-red-700: #80171b;
+  --wonder-deep-red-800: #6a161a;
+  --wonder-deep-red-900: #59181b;
+  --wonder-deep-red-950: #300709;
+
+  /* Wonder Purple */
+  --wonder-purple-50: #fdf4ff;
+  --wonder-purple-100: #fae8ff;
+  --wonder-purple-200: #f5d0fe;
+  --wonder-purple-300: #f0abfc;
+  --wonder-purple-400: #e879f9;
+  --wonder-purple-500: #A40080;
+  --wonder-purple-600: #8c0070;
+  --wonder-purple-700: #74005d;
+  --wonder-purple-800: #5f004d;
+  --wonder-purple-900: #4f0040;
+  --wonder-purple-950: #2d0024;
+
+  /* Wonder Gray */
+  --wonder-gray-50: #f6f7f7;
+  --wonder-gray-100: #e2e4e5;
+  --wonder-gray-200: #c5c9cc;
+  --wonder-gray-300: #a0a6aa;
+  --wonder-gray-400: #7f8589;
+  --wonder-gray-500: #63666A;
+  --wonder-gray-600: #565a5d;
+  --wonder-gray-700: #494c4f;
+  --wonder-gray-800: #404143;
+  --wonder-gray-900: #38393b;
+  --wonder-gray-950: #232426;
+
+  /* ========================================
+     SEMANTIC COLOR TOKENS
+     ======================================== */
+  
+  --background: #ffffff;
+  --foreground: var(--wonder-gray-900);
+  --primary: var(--wonder-orange-500);
+  --primary-foreground: #ffffff;
+  --secondary: var(--wonder-purple-500);
+  --secondary-foreground: #ffffff;
+  --accent: var(--wonder-yellow-500);
+  --accent-foreground: var(--wonder-gray-900);
+  --muted: var(--wonder-gray-100);
+  --muted-foreground: var(--wonder-gray-500);
+  --destructive: var(--wonder-orange-red-500);
+  --destructive-foreground: #ffffff;
+  --border: var(--wonder-gray-200);
+  --input: var(--wonder-gray-300);
+  --ring: var(--wonder-orange-500);
+
+  /* ========================================
+     SPACING SCALE (Number Scale)
+     ======================================== */
+  
+  --spacing-3xs: 2px;
+  --spacing-2xs: 4px;
+  --spacing-xs: 6px;
+  --spacing-s: 8px;
+  --spacing-m: 12px;
+  --spacing-l: 16px;
+  --spacing-xl: 20px;
+  --spacing-2xl: 24px;
+  --spacing-3xl: 32px;
+  --spacing-4xl: 40px;
+  --spacing-full: 999px;
+
+  /* ========================================
+     BORDER RADIUS SCALE
+     ======================================== */
+  
+  --radius-xs: 2px;
+  --radius-s: 4px;
+  --radius-m: 12px;
+  --radius-l: 16px;
+  --radius-xl: 20px;
+  --radius-full: 999px;
+  --radius: var(--radius-m); /* default radius */
+
+  /* ========================================
+     TYPOGRAPHY - FONT FAMILIES
+     ======================================== */
+  
+  --font-baikal: 'Baikal', sans-serif;
+  --font-baikal-expanded: 'Baikal Expanded', sans-serif;
+  --font-baikal-ultra-condensed: 'Baikal Ultra Condensed', sans-serif;
+
+  /* ========================================
+     TYPOGRAPHY - FONT SIZES
+     ======================================== */
+  
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-21: 21px;
+  --font-size-27: 27px;
+  --font-size-36: 36px;
+  --font-size-47: 47px;
+  --font-size-80: 80px;
+  --font-size: 16px; /* Base font size */
+
+  /* ========================================
+     TYPOGRAPHY - FONT WEIGHTS
+     ======================================== */
+  
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* ========================================
+     TYPOGRAPHY - LINE HEIGHTS
+     ======================================== */
+  
+  --line-height-18: 18px;
+  --line-height-20: 20px;
+  --line-height-24: 24px;
+  --line-height-32: 32px;
+  --line-height-41: 41px;
+  --line-height-54: 54px;
+  --line-height-71: 71px;
+  --line-height-120: 120px;
+
+  /* ========================================
+     TYPOGRAPHY - LETTER SPACING
+     ======================================== */
+  
+  --letter-spacing-caption: 0.48px;
+}
+
+/* ========================================
+   TAILWIND THEME INTEGRATION
+   ======================================== */
+
+@theme inline {
+  /* Colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Wondermore Brand Colors */
+  --color-wonder-yellow: var(--wonder-yellow-500);
+  --color-wonder-orange: var(--wonder-orange-500);
+  --color-wonder-orange-red: var(--wonder-orange-red-500);
+  --color-wonder-deep-red: var(--wonder-deep-red-500);
+  --color-wonder-purple: var(--wonder-purple-500);
+  --color-wonder-gray: var(--wonder-gray-500);
+
+  /* Spacing */
+  --spacing-3xs: var(--spacing-3xs);
+  --spacing-2xs: var(--spacing-2xs);
+  --spacing-xs: var(--spacing-xs);
+  --spacing-s: var(--spacing-s);
+  --spacing-m: var(--spacing-m);
+  --spacing-l: var(--spacing-l);
+  --spacing-xl: var(--spacing-xl);
+  --spacing-2xl: var(--spacing-2xl);
+  --spacing-3xl: var(--spacing-3xl);
+  --spacing-4xl: var(--spacing-4xl);
+
+  /* Border Radius */
+  --radius-xs: var(--radius-xs);
+  --radius-s: var(--radius-s);
+  --radius-sm: var(--radius-s);
+  --radius-m: var(--radius-m);
+  --radius-md: var(--radius-m);
+  --radius-l: var(--radius-l);
+  --radius-lg: var(--radius-l);
+  --radius-xl: var(--radius-xl);
+  --radius-full: var(--radius-full);
+}
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-baikal);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* ========================================
+   WONDERMORE TYPOGRAPHY SYSTEM
+   Base typography styles for HTML elements
+   ======================================== */
+
+@layer base {
+  :where(:not(:has([class*=' text-']), :not(:has([class^='text-'])))) {
+    /* Display (H1) - Baikal Ultra Condensed Medium, 80px/120px */
+    h1 {
+      font-family: var(--font-baikal-ultra-condensed);
+      font-size: var(--font-size-80);
+      font-weight: var(--font-weight-medium);
+      line-height: var(--line-height-120);
+      text-transform: uppercase;
+    }
+
+    /* Title (H2) - Baikal Ultra Condensed Regular, 47px/71px */
+    h2 {
+      font-family: var(--font-baikal-ultra-condensed);
+      font-size: var(--font-size-47);
+      font-weight: var(--font-weight-regular);
+      line-height: var(--line-height-71);
+      text-transform: uppercase;
+    }
+
+    /* Subtitle (H3) - Baikal Expanded Regular, 36px/54px */
+    h3 {
+      font-family: var(--font-baikal-expanded);
+      font-size: var(--font-size-36);
+      font-weight: var(--font-weight-regular);
+      line-height: var(--line-height-54);
+      text-transform: uppercase;
+    }
+
+    /* Heading (H4) - Baikal Regular, 27px/41px */
+    h4 {
+      font-family: var(--font-baikal);
+      font-size: var(--font-size-27);
+      font-weight: var(--font-weight-regular);
+      line-height: var(--line-height-41);
+      text-transform: uppercase;
+    }
+
+    /* Subheading (H5) - Baikal Regular, 21px/32px */
+    h5 {
+      font-family: var(--font-baikal);
+      font-size: var(--font-size-21);
+      font-weight: var(--font-weight-regular);
+      line-height: var(--line-height-32);
+      text-transform: uppercase;
+    }
+
+    /* Body Base - Baikal Regular, 16px/24px */
+    p {
+      font-family: var(--font-baikal);
+      font-size: var(--font-size-16);
+      font-weight: var(--font-weight-regular);
+      line-height: var(--line-height-24);
+    }
+
+    /* Labels - Baikal Regular, 16px/24px */
+    label {
+      font-family: var(--font-baikal);
+      font-size: var(--font-size-16);
+      font-weight: var(--font-weight-regular);
+      line-height: var(--line-height-24);
+    }
+
+    /* Buttons - Baikal Regular, 16px/24px */
+    button {
+      font-family: var(--font-baikal);
+      font-size: var(--font-size-16);
+      font-weight: var(--font-weight-regular);
+      line-height: var(--line-height-24);
+    }
+
+    /* Inputs - Baikal Regular, 16px/24px */
+    input {
+      font-family: var(--font-baikal);
+      font-size: var(--font-size-16);
+      font-weight: var(--font-weight-regular);
+      line-height: var(--line-height-24);
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+/* ========================================
+   UTILITY CLASSES FOR WONDERMORE TYPOGRAPHY
+   Use these classes to apply specific type styles
+   ======================================== */
+
+@layer utilities {
+  .text-display {
+    font-family: var(--font-baikal-ultra-condensed);
+    font-size: var(--font-size-80);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-120);
+    text-transform: uppercase;
+  }
+
+  .text-title {
+    font-family: var(--font-baikal-ultra-condensed);
+    font-size: var(--font-size-47);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-71);
+    text-transform: uppercase;
+  }
+
+  .text-subtitle {
+    font-family: var(--font-baikal-expanded);
+    font-size: var(--font-size-36);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-54);
+    text-transform: uppercase;
+  }
+
+  .text-heading {
+    font-family: var(--font-baikal);
+    font-size: var(--font-size-27);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-41);
+    text-transform: uppercase;
+  }
+
+  .text-subheading {
+    font-family: var(--font-baikal);
+    font-size: var(--font-size-21);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-32);
+    text-transform: uppercase;
+  }
+
+  .text-body {
+    font-family: var(--font-baikal);
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-24);
+  }
+
+  .text-body-bold {
+    font-family: var(--font-baikal);
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-24);
+  }
+
+  .text-body-small {
+    font-family: var(--font-baikal);
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-20);
+  }
+
+  .text-body-small-bold {
+    font-family: var(--font-baikal);
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-20);
+  }
+
+  .text-caption {
+    font-family: var(--font-baikal);
+    font-size: var(--font-size-12);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-18);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-caption);
+  }
+}
